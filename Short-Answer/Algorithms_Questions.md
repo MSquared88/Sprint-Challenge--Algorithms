@@ -7,6 +7,7 @@ pseudocode with respect to the input size n of each of the following:
 
 ```python
 a)  a = 0
+    O(n * n)
     while (a < n * n * n):
       a = a + n * n
 ```
@@ -14,18 +15,20 @@ a)  a = 0
 
 ```
 b)  sum = 0
+    <!-- O(n) -->
     for i in range(n):
       j = 1
+      <!-- O(logn) -->
       while j < n:
         j *= 2
-        sum += 1
+        sum += 
 ```
 
 ```
 c)  def bunnyEars(bunnies):
       if bunnies == 0:
         return 0
-
+    O(n)
       return 2 + bunnyEars(bunnies-1)
 ```
 
